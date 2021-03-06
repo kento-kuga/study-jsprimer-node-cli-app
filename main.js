@@ -8,7 +8,8 @@ const cliOptions = {
 };
 
 const fs = require("fs");
-const marked = require("marked");
+
+const md2html = require("./md2html");
 
 const filePath = program.args[0];
 
@@ -18,8 +19,7 @@ fs.readFile(filePath, { encoding: "utf-8" }, (error, file) => {
     process.exit(1);
     return;
   }
-  const html = marked(file, {
-    gfm: cliOptions.gfm,
-  });
+
+  const html = md2html(file, cliOptions);
   console.log(html);
 });
