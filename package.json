@@ -1,0 +1,12 @@
+{
+  "name": "nodecli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kento-kuga/study-node-cli-app.git",
+  "author": "Kento Kuga <kento.kuga.hidari@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "5.0",
+    "marked": "1.0.0"
+  }
+}
